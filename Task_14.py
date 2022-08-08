@@ -6,4 +6,6 @@ while (a!=b):
     else:
         b = b - a
 
-    print(a, b, sep="**")
+    # print(a, b, sep="**")
+
+print("test")
