@@ -1,11 +1,14 @@
 a, b = map(int, input().split())
-
-while (a!=b):
-    if (a>b):
-        a = a - b
+temp_a = abs(a)
+temp_b = abs(b)
+while (temp_a * temp_b >0):
+    if (temp_a > temp_b):
+        temp_a = temp_a % temp_b
     else:
-        b = b - a
+        temp_b = temp_b % temp_a
 
-    # print(a, b, sep="**")
+    nod = temp_a+temp_b
 
-print("test")
+nok = int((a * b) / nod)
+
+print(nok)
