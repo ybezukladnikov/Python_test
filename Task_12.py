@@ -1,10 +1,11 @@
-N = int(input())
+# N = int(input(" "))
 
-array = list(map(int, input().split()))
+array = list(map(int, input("df ").split()))
+array1 = list(map(int, input("df ").split()))
 
+mas = [array, array1]
 
-# print(N)
-print(array)
+print(mas)
 
 
 # x = 3
