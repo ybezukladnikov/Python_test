@@ -2,16 +2,14 @@
 #
 # import random
 #
-# rand = random.random()
-# rand.
-# rand1 = random.randint(1,20)
+#
 #
 # finish = 200
 #
 # t1 = turtle.Turtle()   # Создаем объект класса Turtle
 #
 # t1.shape('turtle')
-# t1.color('green')
+# t1.color('blue')
 # t1.penup()
 # t1.goto(-200,20)
 # t1.pendown()
@@ -51,18 +49,10 @@
 #     x2, y1 = t2.position()
 #
 # turtle.exitonclick()
-#
-#
 
-import matplotlib.pyplot as plt
-# import seaborn as sns
-#
-#
-# x = ['А', 'Б', 'В']
-# y = [10, 50, 30]
-#
-# sns.barplot(x=x, y=y);
-# input('Press ENTER to exit')
+
+
+
 
 # import matplotlib.pyplot as plt
 # import numpy as np
@@ -97,12 +87,28 @@ import matplotlib.pyplot as plt
 #
 # plt.show()
 
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+#
+#
+# x = ['А', 'Б', 'В','C']
+# y = [10, 50, 30, 35]
+#
+# sns.barplot(x=x, y=y);
+# plt.show()
+
+
+import seaborn
 import matplotlib.pyplot as plt
-import seaborn as sns
+w = 4
+h = 3
+d = 70
+plt.figure(figsize=(w, h), dpi=d)
+data = [[1, 2, 1, 1],
+        [2, 3, 1, 3],
+        [3, 1, 3, 2],
+        [5, 4, 2, 1]]
+seaborn.heatmap(data)
+plt.savefig("out.png")
 
-
-x = ['А', 'Б', 'В']
-y = [10, 50, 30]
-
-sns.barplot(x=x, y=y);
 plt.show()
