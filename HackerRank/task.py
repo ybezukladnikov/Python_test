@@ -70,10 +70,12 @@
 #
 # print("%.2f" % aver)
 
-coman, *integer = input().split()
+coman, *integer, test = input().split()
 
 print(coman)
-print(len(integer))
+print(integer)
+print(test)
+
 
 
 
