@@ -50,25 +50,30 @@
 # for i in range(len(arr_res_name)):
 #     print(arr_res_name[i])
 
-n = int(input(" "))
+# n = int(input(" "))
+#
+# my_dict = {}
+# for i in range(n):
+#     name, *line = input(" ").split()
+#     val = list(map(float, line))
+#     my_dict[name] = val
+#
+# val_key = input(" ")
+# list = my_dict[val_key]
+#
+# sum = 0
+#
+# for i in range(len(list)):
+#     sum+=list[i]
+#
+# aver = sum/3
+#
+# print("%.2f" % aver)
 
-my_dict = {}
-for i in range(n):
-    name, *line = input(" ").split()
-    val = list(map(float, line))
-    my_dict[name] = val
+coman, *integer = input().split()
 
-val_key = input(" ")
-list = my_dict[val_key]
-
-sum = 0
-
-for i in range(len(list)):
-    sum+=list[i]
-
-aver = sum/3
-
-print("%.2f" % aver)
+print(coman)
+print(len(integer))
 
 
 
