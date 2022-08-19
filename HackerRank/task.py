@@ -70,11 +70,36 @@
 #
 # print("%.2f" % aver)
 
-coman, *integer, test = input().split()
+dict={}
+array =[]
 
-print(coman)
-print(integer)
-print(test)
+n = int(input(" "))
+for i in range(n):
+    name_temp, *temp = input(" ").split()
+    val = list(map(int, temp))
+    name = str(i)+name_temp
+    dict[name]=val
+
+print(dict)
+
+for key in dict:
+    if key[1:] =="append": array.append(dict[key][0])
+    if key[1:] =="insert": array.insert(dict[key][0],dict[key][1])
+    if key[1:] =="print" : print(array)
+    if key[1:] == "pop" : array.pop()
+    if key[1:] == "sort" : array.sort()
+    if key[1:] == "reverse": array.reverse()
+    if key[1:] == "remove" : array.remove(dict[key][0])
+
+
+
+
+
+
+
+
+
+
 
 
 
