@@ -70,27 +70,78 @@
 #
 # print("%.2f" % aver)
 
-dict={}
-array =[]
+# dict={}
+# array =[]
+#
+# n = int(input(" "))
+# for i in range(n):
+#     name_temp, *temp = input(" ").split()
+#     val = list(map(int, temp))
+#     name = str(i)+"-"+name_temp
+#     dict[name]=val
+#
+# print(dict)
+#
+# for key in dict:
+#     a, b = key.split("-")
+#     if b == "append": array.append(dict[key][0])
+#     elif b == "insert": array.insert(dict[key][0],dict[key][1])
+#     elif b == "print" : print(array)
+#     elif b == "pop" : array.pop()
+#     elif b == "sort" : array.sort()
+#     elif b == "reverse": array.reverse()
+#     elif b == "remove" : array.remove(dict[key][0])
+#
 
-n = int(input(" "))
-for i in range(n):
-    name_temp, *temp = input(" ").split()
-    val = list(map(int, temp))
-    name = str(i)+name_temp
-    dict[name]=val
+# x = int(input(" "))
+# y = int(input(" "))
+# z = int(input(" "))
+# n = int(input(" "))
 
-print(dict)
+# mas = [0]*3
+# for i in range(3):
+#     mas[i]=[0]*3
+x=2
+y=2
+z=3
+n=2
 
-for key in dict:
-    if key[1:] =="append": array.append(dict[key][0])
-    if key[1:] =="insert": array.insert(dict[key][0],dict[key][1])
-    if key[1:] =="print" : print(array)
-    if key[1:] == "pop" : array.pop()
-    if key[1:] == "sort" : array.sort()
-    if key[1:] == "reverse": array.reverse()
-    if key[1:] == "remove" : array.remove(dict[key][0])
+x1=0
+y1=0
+z1=0
+mas=[]
 
+
+for i in range(z+1):
+
+    mas.append([x1, y1, z1])
+    # if x1+y1+z1==n : mas.pop()
+    z1 += 1
+
+z1 = 0
+
+for i in range(y):
+
+    y1 += 1
+    mas.append([x1, y1, z1])
+    if x1+y1+z1==0 : mas.pop()
+    # if x1+y1+z1==n : mas.pop()
+
+for i in range(z):
+    z1 += 1
+    mas.append([x1, y1, z1])
+    # if x1+y1+z1==n : mas.pop()
+
+
+
+
+
+
+
+
+
+
+print(mas)
 
 
 
