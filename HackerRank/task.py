@@ -103,45 +103,71 @@
 #     mas[i]=[0]*3
 x=2
 y=2
-z=3
+z=2
 n=2
 
-x1=0
-y1=0
-z1=0
+# x1=0
+# y1=0
+# z1=0
 mas=[]
+res = []
+
+for k in range(x+1):
+    for j in range(y + 1):
+        for i in range(z + 1):
+            mas.append([k, j, i])
+
+for i in mas:
+    if sum(i) != n: res.append(i)
 
 
-for i in range(z+1):
-
-    mas.append([x1, y1, z1])
-    # if x1+y1+z1==n : mas.pop()
-    z1 += 1
-
-z1 = 0
-
-for i in range(y):
-
-    y1 += 1
-    mas.append([x1, y1, z1])
-    if x1+y1+z1==0 : mas.pop()
-    # if x1+y1+z1==n : mas.pop()
-
-for i in range(z):
-    z1 += 1
-    mas.append([x1, y1, z1])
-    # if x1+y1+z1==n : mas.pop()
+print(res)
 
 
 
 
 
+# for i in range(z+1):
+#
+#     mas.append([x1, y1, z1])
+#     z1 += 1
+#
+# z1 = 0
+#
+# for i in range(y):
+#
+#     y1 += 1
+#     mas.append([x1, y1, z1])
+#
+# for i in range(z):
+#     z1 += 1
+#     mas.append([x1, y1, z1])
+#
+# z1 = 0
+# y1 = 0
+#
+# for i in range(x):
+#
+#     x1 += 1
+#     mas.append([x1, y1, z1])
+#
+# for i in range(z):
+#     z1 += 1
+#     mas.append([x1, y1, z1])
+#
+#
+# z1 = 0
+#
+# for i in range(y):
+#
+#     y1 += 1
+#     mas.append([x1, y1, z1])
+#
+# for i in range(z):
+#     z1 += 1
+#     mas.append([x1, y1, z1])
 
 
-
-
-
-print(mas)
 
 
 
