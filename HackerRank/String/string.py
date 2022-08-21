@@ -30,31 +30,37 @@
 
 
 def count_substring(string, sub_string):
-    count = 0
-    i = 0
-    k=0
-    res=0
-    while(i<len(string)):
-        while(k<len(sub_string)):
-            if string[i]==sub_string[k]:
-                count+=1
-                if count==len(sub_string):
-                    res+=1
-                    count=0
-                    k=0
-                    break
+    # count = 0
+    # i = 0
+    # k=0
+    # res=0
+    # while(i<len(string)):
+    #     while(k<len(sub_string)):
+    #         if string[i]==sub_string[k]:
+    #             count+=1
+    #             if count==len(sub_string):
+    #                 res+=1
+    #                 count=0
+    #                 k=0
+    #                 break
+    #
+    #             i+=1
+    #             k+=1
+    #         else:
+    #             if count>0:
+    #                 i-=1
+    #             k=0
+    #             break
+    #
+    #     i+=1
 
-                i+=1
-                k+=1
-            else:
-                if count>0:
-                    i-=1
-                k=0
-                break
+    count=0
+    for i in range(len(string)):
+        if string.find(sub_string,i,len(sub_string)+i)!= -1:
+            count+=1
 
-        i+=1
 
-    return res
+    return count
 
 
 if __name__ == '__main__':
