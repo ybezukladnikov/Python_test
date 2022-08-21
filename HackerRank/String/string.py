@@ -28,44 +28,43 @@
 #     s_new = mutate_string(s, int(i), c)
 #     print(s_new)
 
+# Поиск подстроки.
+# def count_substring(string, sub_string):
+#     count=0
+#     for i in range(len(string)):
+#         if string.find(sub_string,i,len(sub_string)+i)!= -1:
+#             count+=1
+#
+#
+#     return count
+#
+#
+# if __name__ == '__main__':
+#     string = input(" ").strip()
+#     sub_string = input(" ").strip()
+#
+#     count = count_substring(string, sub_string)
+#     print(count)
+#
+s = input("")
 
-def count_substring(string, sub_string):
-    # count = 0
-    # i = 0
-    # k=0
-    # res=0
-    # while(i<len(string)):
-    #     while(k<len(sub_string)):
-    #         if string[i]==sub_string[k]:
-    #             count+=1
-    #             if count==len(sub_string):
-    #                 res+=1
-    #                 count=0
-    #                 k=0
-    #                 break
-    #
-    #             i+=1
-    #             k+=1
-    #         else:
-    #             if count>0:
-    #                 i-=1
-    #             k=0
-    #             break
-    #
-    #     i+=1
-
-    count=0
-    for i in range(len(string)):
-        if string.find(sub_string,i,len(sub_string)+i)!= -1:
-            count+=1
+a = False
+b = False
+c = False
+d = False
+e = False
 
 
-    return count
+for i in s:
+    if i.isalnum()==True:a=True
+    if i.isalpha() == True: b = True
+    if i.isdigit() == True: c = True
+    if i.islower() == True: d = True
+    if i.isupper() == True: e = True
 
 
-if __name__ == '__main__':
-    string = input(" ").strip()
-    sub_string = input(" ").strip()
-
-    count = count_substring(string, sub_string)
-    print(count)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
