@@ -93,79 +93,72 @@
 #     elif b == "remove" : array.remove(dict[key][0])
 #
 
-# x = int(input(" "))
-# y = int(input(" "))
-# z = int(input(" "))
-# n = int(input(" "))
 
-# mas = [0]*3
-# for i in range(3):
-#     mas[i]=[0]*3
-x=2
-y=2
-z=2
-n=2
+# x=2
+# y=2
+# z=2
+# n=2
+#
+#
+# mas=[]
+# res = []
+#
+# for k in range(x+1):
+#     for j in range(y + 1):
+#         for i in range(z + 1):
+#             mas.append([k, j, i])
+#
+# for i in mas:
+#     if sum(i) != n: res.append(i)
+#
+#
+# print(res)
+#
 
-# x1=0
-# y1=0
-# z1=0
-mas=[]
-res = []
+# Бинарный поиск.
 
-for k in range(x+1):
-    for j in range(y + 1):
-        for i in range(z + 1):
-            mas.append([k, j, i])
+# from random import randint
+# import math
+# a=98
+# b=200
+# x = randint(a, b)
+#
+# print(x)
+# i=2
+# y = abs(b-a)//i
+# count = 1
+# while y!=x:
+#
+#     if x>y:
+#         y = y + math.ceil((100-50)/i)
+#     else:
+#         y = y - math.ceil((100-50)/i)
+#     i=i*2
+#     count+=1
+#
+# print(y)
+# print("счетчик =",count)
 
-for i in mas:
-    if sum(i) != n: res.append(i)
+thickness=5
+c = 'H'
+
+for i in range(thickness):
+    print((c*i).rjust(thickness-1)+c+ (c * i).ljust(thickness - 1))
+
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+for i in range((thickness+1)//2):
+    print((c*thickness*5).center(thickness*6))
+
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+for i in range(thickness):
+    print(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(
+        thickness * 6))
 
 
-print(res)
-
-
-
-
-
-# for i in range(z+1):
-#
-#     mas.append([x1, y1, z1])
-#     z1 += 1
-#
-# z1 = 0
-#
-# for i in range(y):
-#
-#     y1 += 1
-#     mas.append([x1, y1, z1])
-#
-# for i in range(z):
-#     z1 += 1
-#     mas.append([x1, y1, z1])
-#
-# z1 = 0
-# y1 = 0
-#
-# for i in range(x):
-#
-#     x1 += 1
-#     mas.append([x1, y1, z1])
-#
-# for i in range(z):
-#     z1 += 1
-#     mas.append([x1, y1, z1])
-#
-#
-# z1 = 0
-#
-# for i in range(y):
-#
-#     y1 += 1
-#     mas.append([x1, y1, z1])
-#
-# for i in range(z):
-#     z1 += 1
-#     mas.append([x1, y1, z1])
 
 
 
