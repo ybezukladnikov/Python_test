@@ -46,25 +46,58 @@
 #     count = count_substring(string, sub_string)
 #     print(count)
 #
-s = input("")
 
-a = False
-b = False
-c = False
-d = False
-e = False
+# Task 3
+# s = input("")
+#
+# a = False
+# b = False
+# c = False
+# d = False
+# e = False
+#
+#
+# for i in s:
+#     if i.isalnum()==True:a=True
+#     if i.isalpha() == True: b = True
+#     if i.isdigit() == True: c = True
+#     if i.islower() == True: d = True
+#     if i.isupper() == True: e = True
+#
+#
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+
+# Task 4
+
+# import textwrap
+#
+# def wrap(string, max_width):
+#
+#
+#     return textwrap.fill(string,max_width)
+#
+# if __name__ == '__main__':
+#     string, max_width = input(" "), int(input(" "))
+#     result = wrap(string, max_width)
+#     print(result)
+
+# Task 5
+N, M = map(int,input(" ").split())
+c=".|."
+a = "WELCOME"
+
+for i in range(1,N,2):
+    print((c*i).center(M,"-"))
+
+print(a.center(M,"-"))
+
+for i in range(N-2,0,-2):
+    print((c*i).center(M,"-"))
 
 
-for i in s:
-    if i.isalnum()==True:a=True
-    if i.isalpha() == True: b = True
-    if i.isdigit() == True: c = True
-    if i.islower() == True: d = True
-    if i.isupper() == True: e = True
 
 
-print(a)
-print(b)
-print(c)
-print(d)
-print(e)
