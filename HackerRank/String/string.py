@@ -18,9 +18,9 @@
 
 
 # def mutate_string(string, position, character):
-#     res = string[:position]+character+string[position+1:]
+#     res_binar = string[:position]+character+string[position+1:]
 #
-#     return res
+#     return res_binar
 #
 # if __name__ == '__main__':
 #     s = input(" ")
@@ -86,17 +86,80 @@
 #     print(result)
 
 # Task 5
-N, M = map(int,input(" ").split())
-c=".|."
-a = "WELCOME"
+# N, M = map(int,input(" ").split())
+# c=".|."
+# a = "WELCOME"
+#
+# for i in range(1,N,2):
+#     print((c*i).center(M,"-"))
+#
+# print(a.center(M,"-"))
+#
+# for i in range(N-2,0,-2):
+#     print((c*i).center(M,"-"))
+#
 
-for i in range(1,N,2):
-    print((c*i).center(M,"-"))
+# Task 6
 
-print(a.center(M,"-"))
+# N = int(input())
 
-for i in range(N-2,0,-2):
-    print((c*i).center(M,"-"))
+N =46
+
+res_binar = ''
+res_octal= ''
+res_hex = ''
+for i in range(1, N+1):
+    a=i
+    while a >= 2:
+        c = str(a % 2)
+        res_binar = c + res_binar
+        a = a // 2
+
+    binar = '1' + res_binar
+    res_binar =''
+
+    b = i
+    while b >= 8:
+        c = str(b % 8)
+        res_octal = c + res_octal
+        b = b // 8
+
+    octal = str(b) + res_octal
+    res_octal = ''
+
+    if i < 10: d=i
+    if i==10: d='A'
+    if i == 11: d = 'B'
+    if i == 12: d = 'C'
+    if i == 13: d = 'D'
+    if i == 14: d = 'E'
+    if i == 15: d = 'F'
+    if i>15:
+        d = i
+        while d >= 16:
+            c = str(d % 16)
+            if c == 10: c = 'A'
+            if c == 11: c = 'B'
+            if c == 12: c = 'C'
+            if c == 13: c = 'D'
+            if c == 14: c = 'E'
+            if c == 15: c = 'F'
+            res_hex = c + res_hex
+            d = d // 16
+
+
+
+    hexad = str(d) + res_hex
+    res_hex = ''
+
+
+
+    print(str(i).rjust(2) + octal.rjust(10)+hexad.rjust(30)  + binar.rjust(40))
+
+
+
+
+
 
 
 

@@ -1,11 +1,11 @@
 # n = int(input())
 #
-# res = ''
+# res_binar = ''
 # for i in range(1,n+1):
-#     res+=str(i)
+#     res_binar+=str(i)
 #
 #
-# print(res)
+# print(res_binar)
 
 
 # list = [4, 5, 1, 8, 8]
@@ -101,7 +101,7 @@
 #
 #
 # mas=[]
-# res = []
+# res_binar = []
 #
 # for k in range(x+1):
 #     for j in range(y + 1):
@@ -109,10 +109,10 @@
 #             mas.append([k, j, i])
 #
 # for i in mas:
-#     if sum(i) != n: res.append(i)
+#     if sum(i) != n: res_binar.append(i)
 #
 #
-# print(res)
+# print(res_binar)
 #
 
 # Бинарный поиск.
