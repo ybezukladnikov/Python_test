@@ -103,9 +103,29 @@
 
 # N = int(input())
 
-N =46
+N =17
 
 res_binar = ''
+a = N
+while a >= 2:
+    c = str(a % 2)
+    res_binar = c + res_binar
+    a = a // 2
+
+temp = '1' + res_binar
+res_binar = ''
+
+len_line= len(temp)
+x=2
+y=len_line+1
+z=len_line+1
+v=len_line+1
+
+
+
+
+
+
 res_octal= ''
 res_hex = ''
 for i in range(1, N+1):
@@ -138,12 +158,12 @@ for i in range(1, N+1):
         d = i
         while d >= 16:
             c = str(d % 16)
-            if c == 10: c = 'A'
-            if c == 11: c = 'B'
-            if c == 12: c = 'C'
-            if c == 13: c = 'D'
-            if c == 14: c = 'E'
-            if c == 15: c = 'F'
+            if c == '10': c = 'A'
+            if c == '11': c = 'B'
+            if c == '12': c = 'C'
+            if c == '13': c = 'D'
+            if c == '14': c = 'E'
+            if c == '15': c = 'F'
             res_hex = c + res_hex
             d = d // 16
 
@@ -154,7 +174,7 @@ for i in range(1, N+1):
 
 
 
-    print(str(i).rjust(2) + octal.rjust(10)+hexad.rjust(30)  + binar.rjust(40))
+    print(str(i).rjust(x) + octal.rjust(y)+hexad.rjust(z)  + binar.rjust(z))
 
 
 
